@@ -10,5 +10,14 @@ import Foundation
 import UIKit
 
 class loginController: UIViewController {
+    @IBOutlet weak var segueBtn: UIButton!
+    @IBOutlet weak var forgotPassBtn: UIButton!
+    
+    @IBAction func SignInToForgotPass(_ sender: Any) {
+        performSegue(withIdentifier: "SignInToForgotPass", sender: forgotPassBtn)
+    }
+    @IBAction func signInToMain(_ sender: Any) {
+        performSegue(withIdentifier: "SignInToMain", sender: segueBtn)
+    }
     
 }

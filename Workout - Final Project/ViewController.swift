@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func SignInSegue(_ sender: Any) {
-        performSegue(withIdentifier: "mainToSignIn", sender: SignInBtn)
+        performSegue(withIdentifier: "homeToSignIn", sender: SignInBtn)
     }
     @IBAction func SignUpSegue(_ sender: Any) {
-        performSegue(withIdentifier: "mainToSignUp", sender: SignUpBtn)
+        performSegue(withIdentifier: "homeToSignUp", sender: SignUpBtn)
     }
     
 
