@@ -349,6 +349,32 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="WNG-1g-Lx1">
+                                <rect key="frame" x="299" y="155" width="46" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcZ-XV-HUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZn-OL-YND">
+                                        <rect key="frame" x="0.0" y="58" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-gF-vuo">
+                                        <rect key="frame" x="0.0" y="116" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS9-cT-3RN">
+                                        <rect key="frame" x="0.0" y="174" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je9-ZJ-hkX">
+                                        <rect key="frame" x="0.0" y="232" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.9849629787775438" green="1" blue="0.96346660801800565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -363,6 +389,11 @@
                         <outlet property="Five_Title" destination="on8-xK-9uJ" id="oc2-5Q-c2W"/>
                         <outlet property="Four_Image" destination="WYK-im-CWR" id="HrA-Bt-khh"/>
                         <outlet property="Four_Title" destination="75C-WJ-Lwa" id="TOI-yn-BaD"/>
+                        <outlet property="Like_1" destination="vcZ-XV-HUz" id="Ecy-Jd-XyJ"/>
+                        <outlet property="Like_2" destination="KZn-OL-YND" id="mL5-4n-me0"/>
+                        <outlet property="Like_3" destination="cZh-gF-vuo" id="XkN-el-DpJ"/>
+                        <outlet property="Like_4" destination="uS9-cT-3RN" id="SNM-7Z-ua2"/>
+                        <outlet property="Like_5" destination="je9-ZJ-hkX" id="CLX-dB-YWG"/>
                         <outlet property="One_Image" destination="X5k-2z-pY0" id="l1U-rg-tCs"/>
                         <outlet property="One_Title" destination="9D2-F6-faE" id="jNy-z4-BOL"/>
                         <outlet property="Three_Image" destination="B10-Is-Qh4" id="6Id-M8-FZ3"/>
@@ -383,12 +414,12 @@
                 </avPlayerViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cls-hh-UQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783.1999999999998" y="925.18740629685169"/>
+            <point key="canvasLocation" x="986" y="925"/>
         </scene>
         <!--Custom Workout-->
         <scene sceneID="IHp-fS-d6u">
             <objects>
-                <viewController title="Custom Workout" id="VHv-dH-uPH" sceneMemberID="viewController">
+                <viewController title="Custom Workout" id="VHv-dH-uPH" customClass="Custom_Workout_Controller" customModule="Workout___Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IPG-8t-mc8"/>
                         <viewControllerLayoutGuide type="bottom" id="krj-pl-NKo"/>
@@ -403,15 +434,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcc-Se-NKi">
+                                <rect key="frame" x="239" y="341" width="50" height="77"/>
+                                <state key="normal" title="Upload"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHk-1E-dpp">
+                                <rect key="frame" x="86" y="341" width="44" height="77"/>
+                                <state key="normal" title="Select"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37631342134315349" green="0.88421894061909645" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mcc-Se-NKi" firstAttribute="top" secondItem="Srh-u1-OrW" secondAttribute="bottom" constant="250" id="18h-hw-sau"/>
+                            <constraint firstItem="krj-pl-NKo" firstAttribute="top" secondItem="mcc-Se-NKi" secondAttribute="bottom" constant="200" id="Cwl-EX-wnz"/>
                             <constraint firstItem="Srh-u1-OrW" firstAttribute="top" secondItem="IPG-8t-mc8" secondAttribute="bottom" constant="50" id="FPk-DB-gxl"/>
+                            <constraint firstItem="krj-pl-NKo" firstAttribute="top" secondItem="JHk-1E-dpp" secondAttribute="bottom" constant="200" id="TVh-ZE-yZV"/>
+                            <constraint firstItem="JHk-1E-dpp" firstAttribute="leading" secondItem="vLK-jm-eXd" secondAttribute="leadingMargin" constant="70" id="YSk-HE-QuL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mcc-Se-NKi" secondAttribute="trailing" constant="70" id="qSh-NY-Tgo"/>
+                            <constraint firstItem="JHk-1E-dpp" firstAttribute="top" secondItem="Srh-u1-OrW" secondAttribute="bottom" constant="250" id="r0x-2W-uN4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Srh-u1-OrW" secondAttribute="trailing" constant="50" id="sCt-bi-em5"/>
                             <constraint firstItem="Srh-u1-OrW" firstAttribute="leading" secondItem="vLK-jm-eXd" secondAttribute="leadingMargin" constant="50" id="yHL-R5-Eqi"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Custom Workout" id="DDt-ka-Cfq"/>
+                    <connections>
+                        <outlet property="Picture" destination="JHk-1E-dpp" id="vQ9-ad-dep"/>
+                        <outlet property="Upload" destination="mcc-Se-NKi" id="JTe-WP-7OT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQk-FB-EXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

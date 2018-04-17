@@ -22,6 +22,13 @@ class Home_Page_Controller: UIViewController {
     @IBOutlet weak var Four_Title: UIButton!
     @IBOutlet weak var Five_Title: UIButton!
     
+    @IBOutlet weak var Like_1: UIButton!
+    @IBOutlet weak var Like_2: UIButton!
+    @IBOutlet weak var Like_3: UIButton!
+    @IBOutlet weak var Like_4: UIButton!
+    @IBOutlet weak var Like_5: UIButton!
+    
+    
     @IBAction func OneSegue(_ sender: Any) {
         performSegue(withIdentifier: "1 to av", sender: One_Title)
     }
