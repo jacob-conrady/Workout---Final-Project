@@ -26,7 +26,7 @@
 		A0B6C95B207BC5CB00A29C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B6C95E207BC5CB00A29C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B6C960207BC5CB00A29C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0BFAF08208656CB006D658A /* CustomWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWorkout.swift; sourceTree = "<group>"; };
+		A0BFAF08208656CB006D658A /* CustomWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomWorkout.swift; path = ../CustomWorkout.swift; sourceTree = "<group>"; };
 		A0C806C5208112F5006A3230 /* Home Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home Page.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,6 @@
 		A0B6C948207BC5CB00A29C0C = {
 			isa = PBXGroup;
 			children = (
-				A0BFAF08208656CB006D658A /* CustomWorkout.swift */,
 				A0B6C953207BC5CB00A29C0C /* Workout - Final Project */,
 				A0B6C952207BC5CB00A29C0C /* Products */,
 			);
@@ -61,6 +60,7 @@
 		A0B6C953207BC5CB00A29C0C /* Workout - Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				A0BFAF08208656CB006D658A /* CustomWorkout.swift */,
 				A033C998207E6784000BD2B8 /* loginController.swift */,
 				A0C806C5208112F5006A3230 /* Home Page.swift */,
 				A0B6C954207BC5CB00A29C0C /* AppDelegate.swift */,
